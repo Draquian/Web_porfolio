@@ -1,0 +1,242 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../Css/index.css">       
+    <link rel="Website Icon" type = "png" href="C:/Users/USER/Desktop/web/Buttons/Logo.png">
+    <title id = "estadoPagina">Portfolio Roger Salas</title>
+
+    <script>
+        document.addEventListener("visibilitychange", function() {
+          if (document.hidden) {
+            document.getElementById("estadoPagina").textContent = "Come Back pls";
+          } else {
+            document.getElementById("estadoPagina").textContent = "Portfolio Roger Salas";
+          }
+        });
+      </script>
+</head>
+<body class = "Header_Body">
+    <header>
+        <img src="C:/Users/USER/Desktop/web/Buttons/Logo.png" alt="My own logo" class= "Logo">
+        <div class = "Header_Buttons">
+            <button class = "GitHub_Button" onclick="openGitHub()"> 
+                <script> function openGitHub() {window.open('https://github.com/Draquian', '_blank');}</script>
+                GitHub 
+            </button>
+            <button class = "Linkedin_Button"onclick="openLinkedin()"> 
+                <script> function openLinkedin() {window.open('https://www.linkedin.com/in/roger-salas-bernado-46ba74179/', '_blank');}</script>
+                Linkedin
+            </button>
+            <button class = "Mail_Button" onclick="location.href='mailto:rogersalas2000@gmail.com';">
+                Mail 
+            </button>
+            <button class = "CV_Button" onclick="DescargarCV()"> CV 
+                <script>
+                    function DescargarCV() {
+                    //<a href="ruta_del_archivo.pdf" download>Descargar PDF</a>
+                    //window.location.href = 'C:/Users/USER/Downloads/CV.pdf';
+                    window.open('C:/Users/USER/Downloads/CV.pdf', '_blank')
+                    }
+                </script>
+            </button>
+        </div>
+    </header>
+
+    <section class = Seccion_1> 
+        <div class = "Titulo_1"><br>Roger Salas<br><br></div>   
+        <div class = Texto_Normal>
+            Game Developer who likes Programing and Design<br>
+            In this web site you can finde some information about my professional career<br><br>
+            But first of all<br>
+            I have knowledge in differents types of softWares and programing lenguages<br><br><br>
+        </div>
+        <div class = Grid_Displays>
+            <div>
+                <button class = "Display_Button" onclick = "showCode()">
+                        <div class = Display_icon id="Icon_diplay_code">
+                            &nbsp;>&nbsp;
+                        </div>
+                        Programing Languages
+                    <script>
+                        function showCode() {
+                          var Display_Text = document.getElementById("codeLengague");
+                          var Display_icon = document.getElementById("Icon_diplay_code");
+                          if (Display_Text.style.display === "flex") {
+                            Display_icon.style.transition = "0.4s";
+                            Display_icon.style.transform = "rotate(0deg)";
+                            Display_Text.style.display = "none";
+                          } else {
+                            Display_icon.style.transition = "0.4s";
+                            Display_icon.style.transform = "rotate(90deg)";
+                            Display_Text.style.display = "flex";
+                          }
+                        }
+                      </script>
+                </button>
+                <div class = Display_Text id = "codeLengague">
+                    <br>C
+                    <br>C++
+                    <br>C#
+                    <br>HTML
+                    <br>CSS
+                    <br>Flutter / Dart
+                    <br>GLSL
+                    <br>Julia
+                </div>
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div>
+                <button class = "Display_Button" onclick = "showSoftware()">
+                        <div class = Display_icon id="Icon_diplay_software">
+                            &nbsp;>&nbsp;
+                        </div>
+                        Code SoftWare
+                    <script>
+                        function showSoftware() {
+                        var Display_Text = document.getElementById("softWare");
+                        var Display_icon = document.getElementById("Icon_diplay_software");
+                          if (Display_Text.style.display === "flex") {
+                            Display_icon.style.transition = "0.4s";
+                            Display_icon.style.transform = "rotate(0deg)";
+                            Display_Text.style.display = "none";
+                          } else {
+                            Display_icon.style.transition = "0.4s";
+                            Display_icon.style.transform = "rotate(90deg)";
+                            Display_Text.style.display = "flex";
+                          }
+                        }
+                      </script>
+                </button>
+                <div class = Display_Text id = "softWare">
+                    <div>
+                        <br>Unity
+                        <br>Unreal
+                        <br>Git
+                        <br>OpenGL
+                        <br>SDL
+                        <br>Trello
+                        <br>HacknPlan                           
+                        <br>FireBase 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+    <section class = Seccion_2> 
+        <div class = "Titulo_2"><br>My Studies<br><br></div>
+            <div class = Grid_Works>  
+                <button class = "Grid_Button" onclick="openCITM()">
+                    <script> function openCITM() {window.open('https://www.citm.upc.edu/cat/', '_blank');}</script>
+                    <img src="C:/Users/USER/Desktop/web/Buttons/CITM_Logo.png" alt="Imagen grande" class="celda">
+                    <br>Centre de la Imatge i la Tecnologia Multimedia
+                </button>
+                <button class = "Grid_Button" onclick="openCTS()">
+                    <script> function openCTS() {window.open('https://ctsformacion.com/grau/animacio-jocs-i-entorns-interactius.html', '_blank');}</script>
+                    <img src="C:/Users/USER/Desktop/web/Buttons/CTS_Logo.png" alt="Imagen grande" class="celda">
+                    <div>
+                        <br>Creatiu i Tecnic Sabadell
+                    </div>
+                </button>
+            </div>
+            <br><br><br>
+    </section>
+    <section class = Seccion_3> 
+        <div class = "Titulo_2"><br>My Works<br><br></div>
+        <button class = "Error_Button">
+            TFG
+        </button>
+        <div class = Grid_Works>
+            <button class = "Grid_Button_Work" id= "Proj3" onclick="openProj3()">
+                <script>document.getElementById("Proj3").style.backgroundImage = "url(C:/Users/USER/Desktop/web/Buttons/Proj2_Logo.png)";</script>
+                <script> function openProj3() {window.open('https://projectwastelanders.github.io/ProjectWastelanders/', '_blank');}</script>
+                Guardians of the Galaxy
+            </button>
+            <button class = "Grid_Button_Work" id="Proj2" onclick="openProj2()">
+                <script>document.getElementById("Proj2").style.backgroundImage = "url(C:/Users/USER/Desktop/web/Buttons/Proj2_Logo.png)";</script>
+                <script> function openProj2() {window.open('https://project2citm.github.io/The-Last-Purifier/', '_blank');}</script>
+                The Last Purifier
+            </button>
+            <button class = "Grid_Button_Work" id="VR" onclick="openVR()">
+                <script>document.getElementById("VR").style.backgroundImage = "url(C:/Users/USER/Desktop/web/Buttons/Proj2_Logo.png)";</script>
+                <script> function openFigma() {window.open('https://github.com/Draquian/VR-Prototype', '_blank');}</script>
+                VR
+            </button>
+            <button class = "Grid_Button_Work" onclick="openEngine()">
+                <script> function openEngine() {window.open('https://bielrabasa.github.io/TheSeed_GameEngine/', '_blank');}</script>
+                Game Engine
+            </button>
+            <button class = "Grid_Button_Work" onclick="openSudoka()">
+                <script> function openSudoka() {window.open('https://github.com/bielrabasa/Sudoka', '_blank');}</script>
+                Mobile Game
+            </button>
+
+            <button class = "Grid_Button_Work" onclick="openSpotify()">
+                <script> function openSpotify() {window.open('https://github.com/Draquian/Replica_Spotify', '_blank');}</script>
+                Spotify
+            </button>
+            <button class = "Grid_Button_Work" onclick="openSwampJump()">
+                <script> function openSwampJump() {window.open('https://github.com/kramtron/SwampJump', '_blank');}</script>
+                Swamp Jump
+            </button>
+            <button class = "Grid_Button_Work" onclick="openWorms()">
+                <script> function openWorms() {window.open('https://github.com/kramtron/2d-Physics-Engine', '_blank');}</script>
+                Worms Game
+            </button>
+            <button class = "Grid_Button_Work" onclick="openPinBall()">
+                <script> function openPinBall() {window.open('https://github.com/bielrabasa/PhysicsII_Box2D_Pinball', '_blank');}</script>
+                Pin Ball
+            </button>
+            <button class = "Grid_Button_Work" onclick="openProj1()">
+                <script> function openProj1() {window.open('https://bielrabasa.github.io/KinderBoys/', '_blank');}</script>
+                Proj 1
+            </button>
+            <button class = "Grid_Button_Work" onclick="openRandomGame()">
+                <script> function openRandomGame() {window.open('hhttps://draquian.itch.io/box-maze', '_blank');}</script>
+                My First 3D game
+            </button>
+
+            <button class = "Grid_Button_Work" onclick="openIA()">
+                <script> function openIA() {window.open('https://github.com/kramtron/IA_Park_Project', '_blank');}</script>
+                IA Project
+            </button>
+            <button class = "Grid_Button_Work" onclick="openGameJam2()">
+                <script> function openGameJam2() {window.open('https://github.com/kramtron/CITM-GameJam', '_blank');}</script>
+                My First Game Jam
+            </button>
+            <button class = "Grid_Button_Work" onclick="openGameJam1()">
+                <script> function openGameJam1() {window.open('https://draquian.itch.io/not-a-lonely-travel', '_blank');}</script>
+                Game Jam
+            </button>
+            <button class = "Grid_Button_Work" onclick="openRacingCar()">
+                <script> function openRacingCar() {window.open('https://github.com/bielrabasa/Bullet3D_LimousineGame', '_blank');}</script>
+                Car Game
+            </button>
+
+            <button class = "Grid_Button_Work" onclick="openGamification()">
+                <script> function openGamification() {window.open('https://www.figma.com/file/2H7PFFRRUS3hnJt2H32naV/Gamificaci%C3%B3?type=design&node-id=0%3A1&t=wT1JfM5O03too4pg-1', '_blank');}</script>
+                Gamification
+            </button>
+            <button class = "Grid_Button_Work" onclick="openFigma()">
+                <script> function openFigma() {window.open('https://www.figma.com/proto/jv9MrzZLtuDDDME1cHSGwP/UI-Nihon-Legends?type=design&node-id=124-5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=124%3A5&show-proto-sidebar=1', '_blank');}</script>
+                Maquetation in Fimga
+            </button>
+        </div>
+        <br><br><br>
+    </section>
+    <section class = Seccion_4> 
+        <div class = Titulo_3>
+            <br> &nbsp;&nbsp;Contact Me
+        </div>
+        <div class = Texto_Footer>
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location:&nbsp; &nbsp;Barcelona, Spain
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone Numbert:&nbsp; &nbsp;(+34) 635 30 70 41
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail:&nbsp; &nbsp;rogersalas2000@gmail.com
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter:&nbsp; &nbsp;@Draquian37
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin:&nbsp; &nbsp;Roger Salas Bernado
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub:&nbsp; &nbsp;Draquian
+        </div>
+    </section>
+
+    
+</body>
+</html>
