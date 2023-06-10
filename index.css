@@ -215,9 +215,17 @@ section{
     padding-right: 4%;
 }
 
-.Grid_Works{
+.Grid_Studies{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:1rem;
+    color: #fff;
+    background-color: none;
+}
+
+.Grid_Works{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-gap:1rem;
     color: #fff;
     background-color: none;
@@ -264,8 +272,11 @@ section{
     font-size: 1.25vw;
     font-family:'Times New Roman', Times, serif;
     color: #00000000;
-    height: 22.5vh;
+    height: 30vh;
+    width: 30vh;
+    background-position: 50%;
     background-size: 100%;
+    background-repeat: no-repeat;
     transition: 0.5s;
 }
 .Grid_Button_Work:hover{
