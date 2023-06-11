@@ -243,23 +243,25 @@ section{
     font-family:'Times New Roman', Times, serif;
 }
 
-.Error_Button{
-    font-size: 1.25vw;
+.TFG_Button{
     display: flex;
+    place-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     border: none;
     background: none;
 }
-.Error_Button:hover{
+.TFG_Button:hover{
     cursor: grab; /*help*/
     transform:scale(1.05);
     text-shadow: 5px 13px 20px rgba(0, 0, 0, 1);
     transition: 0.4s;
     animation: shake;
 }
-.Error_Button:active{
+.TFG_Button:active{
     cursor: grabbing;
 }
 
