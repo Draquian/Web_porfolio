@@ -1,5 +1,9 @@
-.Header_Body{
+.All_Body{
     margin: 0;
+}
+
+.Section_Header{
+height: auto;
 }
 
 header{
@@ -28,8 +32,6 @@ header{
 
 .GitHub_Button{
     font-size: 1vw;
-    margin-left: 2vh;
-    margin-right: 2vh;
     background-color: #171515 ;
     color: #fff ;
     border-radius: 37px;
@@ -49,8 +51,6 @@ header{
 
 .Linkedin_Button{   
     font-size: 1vw;
-    margin-left: 2vh;
-    margin-right: 2vh; 
     background-color: #0e76a8 ;
     color: #fff;
     border-radius: 37px;
@@ -70,8 +70,6 @@ header{
 
 .Mail_Button{
     font-size: 1vw;
-    margin-left: 2vh;
-    margin-right: 2vh;
     background-color: #fff;
     color: #000;
     border-radius: 37px;
@@ -91,8 +89,6 @@ header{
 
 .CV_Button{
     font-size: 1vw;
-    margin-left: 2vh;
-    margin-right: 2vh;
     background-color: #fff;
     color: #000;
     border-radius: 37px;
