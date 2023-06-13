@@ -3,15 +3,15 @@
 }
 
 .Section_Header{
-height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    height: auto;
 }
 
 header{
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #F4C4E4;
     font-size: large;
     width: auto;
@@ -19,15 +19,39 @@ header{
     z-index: 1;
 }
 
-.Logo{
+/*.Logo{
     margin-left: 48vw;
     margin-right: auto;
     width: 3% ;
     height: auto;
+}*/
+
+.Logo_Button{
+    top: 20;
+    border: none;
+    background: none;
+    font-size: 1.25vw;
+    font-family:'Times New Roman', Times, serif;
+    color: #00000000;
+    height: 8vh;
+    width: 5%;
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.Logo_Button:hover{
+    transform:scale(1.2);
+    text-shadow: 5px 13px 20px rgba(0, 0, 0, 1);
+    transition: 0.4s;
+    transition: 1s;
+    color:#ffffff;
 }
 
 .Header_Buttons{
-    padding: 5px 25px;
+    justify-content: end;
+    padding-left: 31.5%;
+    padding-right: 3%;
 }
 
 .GitHub_Button{
