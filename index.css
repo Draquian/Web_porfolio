@@ -12,7 +12,7 @@
 header{
     position: sticky;
     top: 0;
-    background-color: #F4C4E4;
+    background-color: #545454;
     font-size: large;
     width: auto;
     height: 75px;
@@ -137,7 +137,7 @@ section{
 }
 
 .Seccion_1{
-    background-color: #FFBF5C;
+    background-color: #828282;
 }
 
 .Titulo_1{
@@ -184,7 +184,7 @@ section{
 }
 
 .Seccion_2{
-    background-color: #ffd8f8;
+    background-color: #706f6f;
 }
 
 .Titulo_2{
@@ -223,7 +223,7 @@ section{
 }
 
 .Seccion_3{
-    background-color: #b97bab;
+    background-color: #828282;
 }
 
 .Grid_Displays{
@@ -253,7 +253,7 @@ section{
 }
 
 .Seccion_4{
-    background-color: #ffd8f8;
+    background-color: #706f6f;
 }
 .Titulo_3{
     font-size: 36px;
@@ -313,3 +313,41 @@ section{
 .Grid_Button_Work:active{
     cursor: grabbing;
 }
+
+
+/*   Barra de cerca     
+        <label for="ElementsInProf">Find All&nbsp;</label>
+            <input type="text" id="ElementsInProf" list="items">
+            <datalist id="items">
+            <option value="My Studies">
+            <option value="CITM">
+            <option value="CTS">
+            <option value="My Works">
+            <option value="Guardians of The Galaxy">
+            </datalist>
+            <script>
+                const input = document.getElementById("ElementsInProf");
+
+                input.addEventListener("input", function() {
+                const selectedOption = this.value;
+                switch (selectedOption){
+                    case CITM:
+                    openProj3()
+                    break;
+                        
+                    case CTS:
+                    openProj3()
+                    break;
+
+                    case 3:
+                    window.open('https://github.com/Draquian', '_blank')
+                    break;
+
+                    case 4:
+                    window.open('https://github.com/Draquian', '_blank')
+                    break;
+                }
+
+                });
+            </script>
+*/
