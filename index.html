@@ -1,45 +1,35 @@
 <html>
 <head>
+    <script src="index.js"></script>
+
     <link rel="stylesheet" href="index.css">       
     <link rel="Website Icon" type = "png" href="Buttons/Logo.png">
     <title id = "estadoPagina">Portfolio Roger Salas</title>
 
-    <script>
-        document.addEventListener("visibilitychange", function() {
-          if (document.hidden) {
-            document.getElementById("estadoPagina").textContent = "Come Back pls";
-          } else {
-            document.getElementById("estadoPagina").textContent = "Portfolio Roger Salas";
-          }
-        });
-      </script>
 </head>
 <body class = "All_Body">
     <header class = "Section_Header">
-        <button class="Logo_Button" id="LogoB" onclick="goUp()">
-            <script>document.getElementById("LogoB").style.backgroundImage = "url(Buttons/Logo.png)";</script>
-            <script> function goUp() {window.scrollTo(top = 0, behavior = 'smooth', transition = 0.2);}</script>
-        </button>
+        <button class="Logo_Button" id="LogoB" onclick="goUp()"> </button>
+        
+        <script>
+            document.getElementById("LogoB").style.backgroundImage = "url(Buttons/Logo.png)";
+        </script>
+
         <div class = "Header_Buttons">
             <button class = "GitHub_Button" onclick="openGitHub()"> 
-                <script> function openGitHub() {window.open('https://github.com/Draquian', '_blank');}</script>
                 GitHub 
             </button>
+
             <button class = "Linkedin_Button"onclick="openLinkedin()"> 
-                <script> function openLinkedin() {window.open('https://www.linkedin.com/in/roger-salas-bernado-46ba74179/', '_blank');}</script>
                 Linkedin
             </button>
+
             <button class = "Mail_Button" onclick="location.href='mailto:rogersalas2000@gmail.com';">
                 Mail 
             </button>
-            <button class = "CV_Button" onclick="DescargarCV()"> CV 
-                <script>
-                    function DescargarCV() {
-                    //<a href="ruta_del_archivo.pdf" download>Descargar PDF</a>
-                    //window.location.href = 'C:/Users/USER/Downloads/CV.pdf';
-                    window.open('Others/CV.pdf', '_blank')
-                    }
-                </script>
+
+            <button class = "CV_Button" onclick="DescargarCV()"> 
+                CV 
             </button>
         </div>
     </header>
@@ -59,21 +49,6 @@
                             &nbsp;>&nbsp;
                         </div>
                         Programing Languages
-                    <script>
-                        function showCode() {
-                          var Display_Text = document.getElementById("codeLengague");
-                          var Display_icon = document.getElementById("Icon_diplay_code");
-                          if (Display_Text.style.display === "flex") {
-                            Display_icon.style.transition = "0.4s";
-                            Display_icon.style.transform = "rotate(0deg)";
-                            Display_Text.style.display = "none";
-                          } else {
-                            Display_icon.style.transition = "0.4s";
-                            Display_icon.style.transform = "rotate(90deg)";
-                            Display_Text.style.display = "flex";
-                          }
-                        }
-                      </script>
                 </button>
                 <div class = Display_Text id = "codeLengague">
                     <br>C
@@ -88,26 +63,11 @@
             </div>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
             <div>
-                <button class = "Display_Button" onclick = "showSoftware()">
+                <button class = "Display_Button" onclick = "showSoftware(softWare)">
                         <div class = Display_icon id="Icon_diplay_software">
                             &nbsp;>&nbsp;
                         </div>
                         Code SoftWare
-                    <script>
-                        function showSoftware() {
-                        var Display_Text = document.getElementById("softWare");
-                        var Display_icon = document.getElementById("Icon_diplay_software");
-                          if (Display_Text.style.display === "flex") {
-                            Display_icon.style.transition = "0.4s";
-                            Display_icon.style.transform = "rotate(0deg)";
-                            Display_Text.style.display = "none";
-                          } else {
-                            Display_icon.style.transition = "0.4s";
-                            Display_icon.style.transform = "rotate(90deg)";
-                            Display_Text.style.display = "flex";
-                          }
-                        }
-                      </script>
                 </button>
                 <div class = Display_Text id = "softWare">
                     <div>
@@ -129,12 +89,10 @@
         <div class = "Titulo_2"><br>My Studies<br><br></div>
             <div class = Grid_Studies>  
                 <button class = "Grid_Button" onclick="openCITM()">
-                    <script> function openCITM() {window.open('https://www.citm.upc.edu/cat/', '_blank');}</script>
                     <img src="Buttons/CITM_Logo.png" alt="Imagen grande" class="celda">
                     <br>Centre de la Imatge i la Tecnologia Multimedia
                 </button>
                 <button class = "Grid_Button" onclick="openCTS()">
-                    <script> function openCTS() {window.open('https://ctsformacion.com/grau/animacio-jocs-i-entorns-interactius.html', '_blank');}</script>
                     <img src="Buttons/CTS_Logo.png" alt="Imagen grande" class="celda">
                     <div>
                         <br>Creatiu i Tecnic Sabadell
@@ -148,7 +106,6 @@
         <div class = Grid_Works>
             <button class = "Grid_Button_Work" id= "Proj3" onclick="openProj3()">
                 <script>document.getElementById("Proj3").style.backgroundImage = "url(Buttons/Proj3_Logo.png)";</script>
-                <script> function openProj3() {window.open('https://projectwastelanders.github.io/ProjectWastelanders/', '_blank');}</script>
                 Guardians of the Galaxy
             </button>
             <button class = "Grid_Button_Work" id="Proj2" onclick="openProj2()">
