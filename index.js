@@ -32,31 +32,13 @@ function DescargarCV()
     window.open('Others/CV.pdf', '_blank')
 }
 
-function showCode() 
+function Display_List(softWareID) 
 {
-    var Display_Text = document.getElementById("codeLengague");
+    var Display_Text = document.getElementById(softWareID);
 
-    var Display_icon = document.getElementById("Icon_diplay_code");
+    var IconName = "Icon_dipslay_" + softWareID;
 
-    if (Display_Text.style.display === "flex") 
-    {
-      Display_icon.style.transition = "0.4s";
-      Display_icon.style.transform = "rotate(0deg)";
-      Display_Text.style.display = "none";
-    } 
-    else 
-    {
-      Display_icon.style.transition = "0.4s";
-      Display_icon.style.transform = "rotate(90deg)";
-      Display_Text.style.display = "flex";
-    }
-}
-
-function showSoftware(idName) 
-{
-    var Display_Text = document.getElementById("softWare");
-
-    var Display_icon = document.getElementById("Icon_diplay_software");
+    var Display_icon = document.getElementById(IconName);
 
     if (Display_Text.style.display === "flex") 
     {
