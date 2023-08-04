@@ -13,6 +13,11 @@ document.addEventListener("visibilitychange", function()
 function Change_Theme() {
    if (localStorage.getItem('theme') === 'dark_Theme'){
 
+function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
 window.open('https://github.com/Draquian', '_blank');       setTheme('light_Theme');
    } else {
 window.open('https://www.linkedin.com/in/roger-salas-bernado-46ba74179/', '_blank');
