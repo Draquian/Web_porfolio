@@ -1,7 +1,17 @@
 .All_Body{
     margin: 0;
 }
-/**/
+
+.dark_Theme{
+				--color-Button: #000;
+				--color-Text: #fff;
+} 
+
+.light_Theme{
+				--color-Button: #fff;
+				--color-Text: #000;
+}
+
 .Section_Header{
     display:flex;
     align-items: center;
