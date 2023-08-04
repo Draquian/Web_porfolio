@@ -11,10 +11,10 @@ document.addEventListener("visibilitychange", function()
 })
 
 function switchTheme() {
-   if (localStorage.getItem('theme') === 'dark-Theme'){
-       setTheme('light-Theme');
+   if (localStorage.getItem('theme') === 'dark_Theme'){
+       setTheme('light_Theme');
    } else {
-       setTheme('dark-Theme');
+       setTheme('dark_Theme');
    }
 }
 
