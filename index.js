@@ -70,3 +70,58 @@ function openProj3()
 {
     window.open('https://projectwastelanders.github.io/ProjectWastelanders/', '_blank');
 }
+
+function openProj2() 
+{
+    window.open('https://project2citm.github.io/The-Last-Purifier/', '_blank');
+}
+
+function openVR()
+{
+    window.open('https://github.com/Draquian/VR-Prototype', '_blank');
+}
+
+function openEngine() 
+{
+    window.open('https://bielrabasa.github.io/TheSeed_GameEngine/', '_blank');
+}
+
+function openSudoka() 
+{
+    window.open('https://github.com/bielrabasa/Sudoka', '_blank');
+}
+
+function openSpotify() 
+{
+    window.open('https://github.com/Draquian/Replica_Spotify', '_blank');
+}
+
+function openSwampJump() 
+{
+    window.open('https://github.com/kramtron/SwampJump', '_blank');
+}
+
+function openWorms() 
+{
+    window.open('https://github.com/kramtron/2d-Physics-Engine', '_blank');
+}
+
+function openProj1() 
+{
+    window.open('https://bielrabasa.github.io/KinderBoys/', '_blank');
+}
+
+function openGameJam1() 
+{
+    window.open('https://draquian.itch.io/not-a-lonely-travel', '_blank');
+}
+
+function openGameJam1() 
+{
+    window.open('https://divangus.itch.io/echoes-in-time', '_blank');
+}
+
+function openGamification() 
+{
+    window.open('https://www.figma.com/file/2H7PFFRRUS3hnJt2H32naV/Gamificaci%C3%B3?type=design&node-id=0%3A1&t=wT1JfM5O03too4pg-1', '_blank');
+}
