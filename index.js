@@ -10,6 +10,14 @@ document.addEventListener("visibilitychange", function()
     }
 })
 
+function switchTheme() {
+   if (localStorage.getItem('theme') === 'dark-Theme'){
+       setTheme('light-Theme');
+   } else {
+       setTheme('dark-Theme');
+   }
+}
+
 function goUp() 
 {
     window.scrollTo(top = 0, behavior = 'smooth', transition = 0.2);
