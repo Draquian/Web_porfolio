@@ -10,7 +10,7 @@ document.addEventListener("visibilitychange", function()
     }
 })
 
-function switchTheme() {
+function Change_Theme() {
    if (localStorage.getItem('theme') === 'dark_Theme'){
        setTheme('light_Theme');
    } else {
