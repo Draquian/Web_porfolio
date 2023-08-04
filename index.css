@@ -3,13 +3,13 @@
 }
 
 .dark_Theme{
-				--color-Button: #000;
-				--color-Text: #fff;
+	--color-Button: #000;
+	--color-Text: #fff;
 } 
 
 .light_Theme{
-				--color-Button: #fff;
-				--color-Text: #000;
+	--color-Button: #fff;
+	--color-Text: #000;
 }
 
 .Section_Header{
@@ -123,8 +123,8 @@ header{
 
 .CV_Button{
     font-size: 1vw;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--color-Button) ;
+    color: var(--color-Text) ;
     border-radius: 37px;
     border: none;
     transition: 0.4s;
@@ -132,7 +132,7 @@ header{
 .CV_Button:hover{
     cursor: grab; /*help*/
     transform:scale(1.2);
-    background-color: #fff ;
+    background-color: var(--color-Button) ;
     opacity: 0.9;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
