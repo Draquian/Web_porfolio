@@ -5,24 +5,32 @@
 .dark_Theme{
 	--color-Button: #000;
 	--color-Text: #fff;
+	--color-Text-Dsiplay: #fff;
+    --color-Header: #545454;
+    --color-S1_S3: #828282;
+    --color-S2_S4: #706f6f;
 } 
 
 .light_Theme{
 	--color-Button: #fff;
 	--color-Text: #000;
+	--color-Text-Dsiplay: #303030;
+    --color-Header: #f0f0f0;
+    --color-S1_S3: #dfdfdf;
+    --color-S2_S4: #cfcfcf;
 }
 
 .Section_Header{
     display:flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     height: auto;
 }
 
 header{
     position: sticky;
     top: 0;
-    background-color: #545454;
+    background-color: var(--color-Header);
     font-size: large;
     width: auto;
     height: 75px;
@@ -35,6 +43,40 @@ header{
     width: 3% ;
     height: auto;
 }*/
+
+.Centrando{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.center_Theme{
+    padding-left: 3%;
+    padding-right: 40.7%;
+}
+
+.Theme_Button{
+    width: 5vw;
+    height: 2ch;
+    font-size: 1vw;
+    background-color: var(--color-Button) ;
+    color: var(--color-Text) ;
+    border-radius: 37px;
+    border: none;
+    transition: 0.4s;
+}
+.Theme_Button:hover{
+    cursor: grab; /*help*/
+    transform:scale(1.2);
+    background-color: var(--color-Button) ;
+    opacity: 0.9;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+}
+.Theme_Button:active{
+    cursor: grabbing;
+}
 
 .Logo_Button{
     top: 20;
@@ -60,7 +102,7 @@ header{
 
 .Header_Buttons{
     justify-content: end;
-    padding-left: 31.5%;
+    padding-left: 30%;
     padding-right: 3%;
 }
 
@@ -103,9 +145,9 @@ header{
 }
 
 .Mail_Button{
-    font-size: 1vw;
-    background-color: #fff;
-    color: #000;
+    font-size: 1vw; 
+    background-color: var(--color-Button) ;
+    color: var(--color-Text) ;
     border-radius: 37px;
     border: none;
     transition: 0.4s;
@@ -113,7 +155,7 @@ header{
 .Mail_Button:hover{
     cursor: grab; /*help*/
     transform:scale(1.2);
-    background-color: #fff ;
+    background-color: var(--color-Button) ;
     opacity: 0.9;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -147,7 +189,7 @@ section{
 }
 
 .Seccion_1{
-    background-color: #828282;
+    background-color: var(--color-S1_S3);
 }
 
 .Titulo_1{
@@ -183,7 +225,8 @@ section{
     justify-content: center;
     text-align: center;
     font-size: 24px;
-    color:#fff;
+    color: var(--color-Text-Dsiplay) ;
+    font-weight: bold;
     font-family:'Times New Roman', Times, serif;
 
 }
@@ -194,7 +237,7 @@ section{
 }
 
 .Seccion_2{
-    background-color: #706f6f;
+    background-color: var(--color-S2_S4);
 }
 
 .Titulo_2{
@@ -233,14 +276,14 @@ section{
 }
 
 .Seccion_3{
-    background-color: #828282;
+    background-color: var(--color-S1_S3);
 }
 
 .Grid_Displays{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--color-Text-Dsiplay) ;
     background-color: none;
     padding-right: 4%;
 }
@@ -263,7 +306,7 @@ section{
 }
 
 .Seccion_4{
-    background-color: #706f6f;
+    background-color: var(--color-S2_S4);
 }
 .Titulo_3{
     font-size: 36px;
