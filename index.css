@@ -57,8 +57,10 @@ header{
 }
 
 .Theme_Button{
+    display: flex;
+    align-items: center;
     width: 5vw;
-    height: 2ch;
+    height: 3ch;
     font-size: 1vw;
     background-color: var(--color-Button) ;
     color: var(--color-Text) ;
@@ -76,6 +78,10 @@ header{
 }
 .Theme_Button:active{
     cursor: grabbing;
+}
+
+.Logo_Theme{
+    width: 40%;
 }
 
 .Logo_Button{

@@ -10,14 +10,20 @@ document.addEventListener("visibilitychange", function()
     }
 })
 
+
 function Change_Theme() {
+    const imageElement = document.getElementById("Image_Theme");
+    const imagePosition = document.getElementsByClassName("Theme_Button");
    if (localStorage.getItem('theme') === 'dark_Theme'){
       setTheme('light_Theme');
+      imageElement.src = "Buttons/sun.png";
+      imagePosition.style.textAlign = "start";
    } else {
        setTheme('dark_Theme');
-   }
+       imageElement.src = "Buttons/moon.png";
+       imagePosition.style.textAlign = "end";
+    }
 }
-
 
 function setTheme(themeName) {
             localStorage.setItem('theme', themeName);
