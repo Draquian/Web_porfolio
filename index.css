@@ -37,20 +37,6 @@ header{
     z-index: 1;
 }
 
-/*.Logo{
-    margin-left: 48vw;
-    margin-right: auto;
-    width: 3% ;
-    height: auto;
-}*/
-
-.Centrando{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-
 .center_Theme{
     padding-left: 3%;
     padding-right: 39.5%;
