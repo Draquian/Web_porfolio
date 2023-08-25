@@ -137,7 +137,7 @@ function openGameJam1()
     window.open('https://draquian.itch.io/not-a-lonely-travel', '_blank');
 }
 
-function openGameJam1() 
+function openGameJam2() 
 {
     window.open('https://divangus.itch.io/echoes-in-time', '_blank');
 }
