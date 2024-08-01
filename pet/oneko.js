@@ -1,4 +1,4 @@
-// oneko.js: https://github.com/adryd325/oneko.js
+// original oneko.js: https://github.com/adryd325/oneko.js
 
 (function oneko() {
   const isReducedMotion =
@@ -22,7 +22,7 @@
 
   var colorValue = 0;
 
-  const nekoSpeed = 10;
+  var nekoSpeed = 10;
   const spriteSets = {
     idle: [[-3, -3]],
     alert: [[-7, -3]],
@@ -199,7 +199,7 @@
   }
 
   function frame() {
-    frameCount += 1;
+    frameCount = 1;
     const diffX = nekoPosX - mousePosX;
     const diffY = nekoPosY - mousePosY;
     const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
@@ -228,6 +228,8 @@
     direction += diffX / distance > 0.5 ? "W" : "";
     direction += diffX / distance < -0.5 ? "E" : "";
     setSprite(direction, frameCount);
+
+    nekoSpeed = distance * 0.1;
 
     nekoPosX -= (diffX / distance) * nekoSpeed;
     nekoPosY -= (diffY / distance) * nekoSpeed;
