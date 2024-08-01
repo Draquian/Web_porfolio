@@ -20,6 +20,8 @@
   let idleAnimation = null;
   let idleAnimationFrame = 0;
 
+  var colorValue = 0;
+
   const nekoSpeed = 10;
   const spriteSets = {
     idle: [[-3, -3]],
@@ -202,8 +204,10 @@
     const diffY = nekoPosY - mousePosY;
     const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
 
-    if (distance < nekoSpeed || distance < 48) {
+    if (distance < nekoSpeed || distance < 35) {
       idle();
+      colorValue = colorValue + 20;
+      nekoEl.style.filter = 'hue-rotate(' + colorValue + 'deg' + ')';
       return;
     }
 
