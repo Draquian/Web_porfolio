@@ -146,3 +146,4 @@ function openGamification()
 {
     window.open('https://www.figma.com/file/2H7PFFRRUS3hnJt2H32naV/Gamificaci%C3%B3?type=design&node-id=0%3A1&t=wT1JfM5O03too4pg-1', '_blank');
 }
+
