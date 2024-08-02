@@ -199,7 +199,7 @@
   }
 
   function frame() {
-    frameCount = 1;
+    frameCount += 1;
     const diffX = nekoPosX - mousePosX;
     const diffY = nekoPosY - mousePosY;
     const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
