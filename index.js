@@ -97,6 +97,11 @@ function openProj3()
     window.open('https://projectwastelanders.github.io/ProjectWastelanders/', '_blank');
 }
 
+function openCardGame() 
+{
+    window.open('https://github.com/bielrabasa/InfiniteLoopGame', '_blank');
+}
+
 function openProj2() 
 {
     window.open('https://project2citm.github.io/The-Last-Purifier/', '_blank');
