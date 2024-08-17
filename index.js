@@ -102,6 +102,11 @@ function openCardGame()
     window.open('https://github.com/bielrabasa/InfiniteLoopGame', '_blank');
 }
 
+function openAIChess() 
+{
+    window.open('https://github.com/Draquian/AIGameCGL', '_blank');
+}
+
 function openProj2() 
 {
     window.open('https://project2citm.github.io/The-Last-Purifier/', '_blank');
