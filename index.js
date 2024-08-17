@@ -80,6 +80,11 @@ function openCITM()
     window.open('https://www.citm.upc.edu/cat/', '_blank');
 }
 
+function openTHK() 
+{
+    window.open('https://www.th-koeln.de/', '_blank');
+}
+
 function openCTS() 
 {
     window.open('https://ctsformacion.com/grau/animacio-jocs-i-entorns-interactius.html', '_blank');
