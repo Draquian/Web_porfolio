@@ -50,7 +50,7 @@ function DescargarCV()
 {
     //<a href="ruta_del_archivo.pdf" download>Descargar PDF</a>
     //window.location.href = 'C:/Users/USER/Downloads/CV.pdf';
-    window.open('Others/CV.pdf', '_blank')
+    window.open('Others/Resume_Roger_Salas.pdf', '_blank')
 }
 
 function Display_List(softWareID) 
